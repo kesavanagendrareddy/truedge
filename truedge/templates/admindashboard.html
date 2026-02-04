@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .admin-dashboard {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .admin-dashboard h1 {
+            font-size: 36px;
+            color: #333333;
+        }
+
+        .admin-dashboard p {
+            font-size: 18px;
+            color: #666666;
+        }
+
+        .admin-features {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .admin-features ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .admin-features li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .admin-features a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 16px;
+            border: 2px solid #000000;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+
+        .admin-features a:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="admin-dashboard">
+        <h1>Welcome to the Admin Dashboard</h1>
+        <p>Here you can Add Products, Manage Products, and View Users.</p>
+    </div>
+    <div class="admin-features">
+        <ul>
+            <li><a href="{% url 'products' %}">Add Products</a></li>
+            <li><a href="{% url 'view_users' %}">View Users</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
